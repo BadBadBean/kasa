@@ -1,1 +1,7 @@
-@use './base/general'
+@use "./base/reset";
+@use "./base/general";
+
+@use "./components/banner";
+
+@use "./layout/header";
+@use "./layout/footer";

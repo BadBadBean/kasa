@@ -7,7 +7,7 @@ export default function Header() {
                 <img src="src/assets/logo/logo.png"/>
                 <ul>
                     <li><Link to="/">Accueil</Link></li>
-                    <li><Link to="/about">À propos</Link></li>
+                    <li><Link to="/a-propos">A propos</Link></li>
                 </ul>
             </nav>
         </>
