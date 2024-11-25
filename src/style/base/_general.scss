@@ -1,4 +1,51 @@
 body {
-    font-family: "Montserra";
+    font-family: "Montserrat";
 }
 
+img {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.housing-cards {
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    margin-inline: 20px;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-wrap: balance;
+    z-index: 2;
+}

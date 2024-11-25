@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export default function Header() {
     return (
         <>
             <nav className="nav">
-                <img src="src/assets/logo/logo.png"/>
+                <img className="logo" src="src/assets/logo/logo.png"/>
                 <ul>
-                    <li><Link to="/">Accueil</Link></li>
-                    <li><Link to="/a-propos">A propos</Link></li>
+                    <li><NavLink to="/">Accueil</NavLink></li>
+                    <li><NavLink to="/a-propos">A propos</NavLink></li>
                 </ul>
             </nav>
         </>

@@ -1,4 +1,5 @@
 import Banner from "../components/Banner"
+import Card from "../components/Card"
 
 export default function Home() {
     return (
@@ -8,7 +9,8 @@ export default function Home() {
           backgroundImage='./src/assets/images/home_banner.png'
           text="Chez vous, partout et ailleurs"
         />
-    </div>
+      </div>
+      <Card />
     </>
   )
 }
