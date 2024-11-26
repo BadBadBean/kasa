@@ -1,0 +1,40 @@
+.collapse_container {
+    margin-block: 19px;
+
+    @media (min-width: 1240px) {
+		margin: 38px 108px;
+	}
+}
+
+.collapse {
+    margin: 20px;
+}
+
+.collapse__details {
+    overflow: hidden;
+
+    > p {
+        font-size: 12px;
+        padding: 13px 20px 19px 20px;
+
+        @media (min-width: 769px) {
+            font-size: 18px;
+        }
+    }
+}
+
+.collapse__summary {
+    background-color: #FF6060;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    @media (min-width: 769px) {
+		font-size: 24px;
+	}
+}

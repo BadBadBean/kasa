@@ -1,7 +1,11 @@
+@use "./utils/_animations";
+
 @use "./base/reset";
 @use "./base/general";
 
 @use "./components/banner";
+@use "./components/card";
+@use "./components/collapse";
 
 @use "./layout/header";
 @use "./layout/footer";

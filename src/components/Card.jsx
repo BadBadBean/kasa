@@ -23,7 +23,7 @@ const HousingCards = () => {
         <div className="card" key={index}>
           <img src={item.cover} alt={item.title} />
           <div className="overlay"></div>
-          <h3>{item.title}</h3>
+          <h2>{item.title}</h2>
         </div>
       ))}
     </div>

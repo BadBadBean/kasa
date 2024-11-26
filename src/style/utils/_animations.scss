@@ -1,0 +1,24 @@
+.collapse__details::details-content {
+    block-size: 0;
+    transition: block-size 0.5s, content-visibility 0.5s;
+    transition-behavior: allow-discrete;
+}
+
+.collapse__details[open]::details-content {
+    block-size: auto;
+}
+
+.collapse__details .collapse__summary::after {
+    content: "\f077";
+    display: inline-block;
+    transition: transform 0.5s ease-out;
+    font-family: "Font Awesome 6 Free";
+
+    @media (min-width: 769px) {
+		font-size: 24px;
+	}
+}
+
+.collapse__details[open] .collapse__summary::after {
+    transform: rotate(-180deg);
+}

@@ -1,4 +1,5 @@
 import Banner from "../components/Banner"
+import Collapse from "../components/Collapse"
 
 export default function About() {
     return (
@@ -8,6 +9,7 @@ export default function About() {
           backgroundImage='./src/assets/images/about_banner.png'
         />
     </div>
+    <Collapse />
     </>
   )
 }

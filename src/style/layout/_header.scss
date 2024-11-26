@@ -3,26 +3,43 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-}
 
-.nav ul {
+    @media (min-width: 1240px) {
+		font-size: 24px;
+        padding: 45px 100px;
+	}
+
+  ul {
     list-style: none;
     display: flex;
     gap: 26px;
-}
 
-.nav a {
+    @media (min-width: 769px) {
+		gap: 57px;
+	  }
+  }
+
+  a {
     text-decoration: none;
     color: inherit;
     font-size: 12px;
     font-weight: 500;
-}
 
-.nav .active {
+    @media (min-width: 769px) {
+		font-size: 24px;
+	  }
+  }
+
+  .active {
     text-decoration: underline;
     text-decoration-skip-ink: none;
+  }
 }
 
 .logo {
     width: 145px;
+
+    @media (min-width: 769px) {
+		width: 210px;
+	}
 }
