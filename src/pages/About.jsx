@@ -4,11 +4,9 @@ import Collapse from "../components/Collapse"
 export default function About() {
     return (
     <>
-      <div>
-        <Banner 
+      <Banner 
           backgroundImage='./src/assets/images/about_banner.png'
-        />
-    </div>
+      />
     <Collapse />
     </>
   )
