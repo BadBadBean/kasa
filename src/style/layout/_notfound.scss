@@ -1,0 +1,19 @@
+.notfound {
+  display: flex;
+  flex-direction: column;
+  color: #FF6060;
+}
+
+.notfound_title {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.notfound_subtitle {
+    font-size: 18px;
+}
+
+.notfound_link {
+    font-size: 14px;
+    color: black;
+}
