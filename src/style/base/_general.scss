@@ -1,7 +1,8 @@
 #root {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
     interpolate-size: allow-keywords;
 }
 
@@ -16,6 +17,7 @@ img {
 
 main {
     margin-inline: 20px;
+    height: 100%;
 
     @media (min-width: 1240px) {
         margin-inline: 100px;
