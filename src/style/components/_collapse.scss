@@ -1,20 +1,18 @@
 .collapse_container {
-    margin-block: 19px;
 
     @media (min-width: 1240px) {
-		margin: 38px 108px;
+		display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 76px;
 	}
 }
 
-.collapse {
-    margin: 20px;
-}
-
-.collapse__details {
+details {
     overflow: hidden;
     background-color: #f6f6f6;
+    margin-block: 20px;
 
-    > p {
+    > div {
         font-size: 12px;
         padding: 13px 20px 19px 20px;
 
@@ -22,9 +20,13 @@
             font-size: 18px;
         }
     }
+
+    li {
+        list-style-type: none;
+    }
 }
 
-.collapse__summary {
+summary {
     background-color: #FF6060;
     font-size: 13px;
     font-weight: 700;

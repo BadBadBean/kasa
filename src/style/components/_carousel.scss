@@ -1,0 +1,44 @@
+.carousel {
+    position: relative;
+    margin: 7px 0 15px 0;
+  }
+  
+  .carousel_container {
+    display: flex;
+    
+    img {
+        border-radius: 10px;
+        height: 255px;
+        width: 100%;
+        object-fit: cover;
+    }
+  }
+
+  .carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+        height: 20px;
+    }
+  }
+  
+  .carousel_button.prev {
+    left: 10px;
+  }
+  
+  .carousel_button.next {
+    right: 10px;
+  }
+
+  .carousel_counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+  }

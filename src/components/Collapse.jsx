@@ -1,34 +1,20 @@
-import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-const Collapse = () => {
-    const [collapse, setCollapse] = useState([]);
-  
-    useEffect(() => {
-      const fetchCollapseData = async () => {
-        try {
-          const response = await fetch('/collapse.json');
-          const data = await response.json();
-          setCollapse(data); 
-        } catch (error) {
-          console.error('Erreur de chargement des données:', error);
-        }
-      };
-  
-      fetchCollapseData();
-    }, []);
+const Collapse = ({ data, titleKey, descriptionKey }) => {
+  return (
+      data.map((item, id) => (
+          <details key={id}>
+            <summary>{item[titleKey]}</summary>
+            <div>{item[descriptionKey]}</div>
+          </details>
+      ))
+  );
+};
 
-    return (
-        <div className="collapse_container">
-          {collapse.map((item, index) => (
-            <div className="collapse" key={index}>
-              <details className="collapse__details">
-                <summary className="collapse__summary">{item.title}</summary>
-                <p>{item.description}</p>
-              </details>
-            </div>
-          ))}
-        </div>
-      );
-    };
-    
-    export default Collapse;
+export default Collapse;
+
+Collapse.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object),
+  titleKey: PropTypes.string,
+  descriptionKey: PropTypes.string
+};

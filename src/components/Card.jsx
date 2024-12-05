@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const HousingCards = () => {
   const [housingData, setHousingData] = useState([]);
@@ -19,12 +20,14 @@ const HousingCards = () => {
 
   return (
     <div className="housing-cards">
-      {housingData.map((item, index) => (
-        <div className="card" key={index}>
-          <img src={item.cover} alt={item.title} />
-          <div className="overlay"></div>
-          <h2>{item.title}</h2>
-        </div>
+      {housingData.map((item, id) => (
+        <Link to={`/logement/${item.id}`} key={id}>
+          <div className="card">
+            <img src={item.cover} alt={item.title} />
+            <div className="overlay"></div>
+            <h2>{item.title}</h2>
+          </div>
+        </Link>
       ))}
     </div>
   );

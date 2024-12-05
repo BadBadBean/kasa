@@ -1,14 +1,14 @@
-.collapse__details::details-content {
+details::details-content {
     block-size: 0;
     transition: block-size 0.5s, content-visibility 0.5s;
     transition-behavior: allow-discrete;
 }
 
-.collapse__details[open]::details-content {
+details[open]::details-content {
     block-size: auto;
 }
 
-.collapse__details .collapse__summary::after {
+details summary::after {
     content: "\f077";
     display: inline-block;
     transition: transform 0.5s ease-out;
@@ -19,6 +19,6 @@
 	}
 }
 
-.collapse__details[open] .collapse__summary::after {
+details[open] summary::after {
     transform: rotate(-180deg);
 }
