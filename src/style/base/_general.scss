@@ -23,3 +23,66 @@ main {
         margin-inline: 100px;
     }
 }
+
+.host-details h2 {
+    color: #FF6060;
+    font-size: 12px;
+    max-width: 60px;
+    text-wrap: balance;  
+    text-align: end;
+
+    @media (min-width: 769px) {
+        font-size: 18px;
+        max-width: 90px;
+    }
+}
+
+.host-details img {
+    border-radius: 50%;
+    width: 32px;
+
+    @media (min-width: 769px) {
+        width: 64px;
+    }
+}
+
+.fa-star {
+    font-size: 13px;
+
+    @media (min-width: 769px) {
+        font-size: 24px;
+    }
+}
+
+.empty {
+    color: #E3E3E3; /* Couleur des étoiles grises */
+  }
+  
+.filled {
+    color: #FF6060; /* Couleur des étoiles jaunes */
+  }
+
+.host-details {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 769px) {
+        flex-direction: column;
+    }
+}
+
+.host_info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.housing_content {
+
+    @media (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    }
+}

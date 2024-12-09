@@ -9,12 +9,12 @@
 
 details {
     overflow: hidden;
-    background-color: #f6f6f6;
     margin-block: 20px;
 
     > div {
         font-size: 12px;
         padding: 13px 20px 19px 20px;
+        background-color: #f6f6f6;
 
         @media (min-width: 769px) {
             font-size: 18px;

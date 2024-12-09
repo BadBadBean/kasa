@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import Collapse from "../components/Collapse";
 import Carousel from '../components/Carousel';
 import NotFound from '../pages/NotFound';
+import Tag from '../components/Tag';
+import Host from '../components/Host';
 
 const Housing = () => {
   const [housingData, setHousingData] = useState([]);
@@ -37,9 +39,10 @@ const Housing = () => {
   return (
     <div className="housing-detail">
       <Carousel />
-      <h1 className="housing_title">{housingDetail.title}</h1>
-      <p className='housing_location'>{housingDetail.location}</p>
-
+      <div className='housing_content'>
+      <Tag />
+      <Host />
+      </div>
       <div className='collapse_container'>
         <Collapse
           data={[{ title: "Description", aboutDescription: housingDetail.description }]}
