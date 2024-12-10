@@ -1,5 +1,11 @@
 .collapse_container {
 
+    @media (min-width: 770px) and (max-width: 1239px) {
+		display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 49px;
+	}
+
     @media (min-width: 1240px) {
 		display: grid;
         grid-template-columns: repeat(2, 1fr);

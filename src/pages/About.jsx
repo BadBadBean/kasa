@@ -31,6 +31,7 @@ const About = () => {
     <>
     <Banner 
           backgroundImage='./src/assets/images/about_banner.png'
+          className="banner_about"
       />
       {loading && <p>Chargement des données...</p>}
       {error && <p>Erreur : {error}</p>}

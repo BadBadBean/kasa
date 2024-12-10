@@ -3,10 +3,11 @@
   justify-items: center;
   gap: 113px;
   color: #FF6060;
-  margin-block: 113px;
+  margin-block: 93px 113px;
 
   @media (min-width: 769px) {
     gap: 139px;
+    margin-block: 119px 139px;
   }
 }
 

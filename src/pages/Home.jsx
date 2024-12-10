@@ -7,6 +7,7 @@ export default function Home() {
       <Banner 
         backgroundImage='./src/assets/images/home_banner.png'
         text="Chez vous, partout et ailleurs"
+        className="banner_home"
       />
       <Card />
     </>
