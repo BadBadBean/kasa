@@ -42,7 +42,7 @@ const Housing = () => {
   }
 
   return (
-    <div className="housing-detail">
+    <div className="housing_detail">
       <Carousel />
       <div className="housing_content">
         <Tag />

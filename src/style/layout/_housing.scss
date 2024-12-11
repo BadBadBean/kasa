@@ -3,7 +3,7 @@
 .housing_title {
   color: $main-color;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $font-weight_medium;
 
   @media (min-width: 769px) {
     font-size: 36px;
@@ -12,10 +12,20 @@
 
 .housing_location {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: $font-weight_medium;
   margin-top: 5px;
 
   @media (min-width: 769px) {
     font-size: 18px;
   }
 }
+
+.housing_content {
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+}
+

@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .overlay {
   position: absolute;
   top: 0;
@@ -15,7 +17,7 @@
   z-index: 1;
 }
 
-.housing-cards {
+.housing_cards {
   display: grid;
   width: 100%;
   row-gap: 20px;
@@ -62,7 +64,7 @@
     left: 20px;
     right: 20px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: $font-weight_bold;
     color: white;
     text-wrap: balance;
     z-index: 2;

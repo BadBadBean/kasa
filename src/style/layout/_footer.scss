@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 footer {
   background-color: black;
   color: white;
@@ -19,7 +21,7 @@ footer {
 
   p {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: $font-weight_medium;
     width: 133px;
     text-align: center;
 

@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 .banner {
   position: relative;
   display: flex;
@@ -17,7 +19,7 @@
   }
 
   p {
-    font-weight: 700;
+    font-weight: $font-weight_bold;
     font-size: 24px;
     padding-inline: 16px;
     text-wrap: balance;

@@ -19,7 +19,7 @@ const HousingCards = () => {
   }, []);
 
   return (
-    <div className="housing-cards">
+    <div className="housing_cards">
       {housingData.map((item, id) => (
         <Link to={`/logement/${item.id}`} key={id}>
           <div className="card">

@@ -38,10 +38,10 @@ const Host = () => {
   };
 
   return (
-    <div className="host-details">
+    <div className="host_details">
       <div className="host_info">
         <h2>{host.name}</h2>
-        <img src={host.picture} alt={host.name} className="host-picture" />
+        <img src={host.picture} alt={host.name}/>
       </div>
       {rating && <div className="stars">{renderStars(parseInt(rating))}</div>}
     </div>

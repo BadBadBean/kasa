@@ -15,7 +15,7 @@
 
 .notfound_title {
   font-size: 96px;
-  font-weight: 700;
+  font-weight: $font-weight_bold;
 
   @media (min-width: 769px) {
     font-size: 288px;
@@ -24,7 +24,7 @@
 
 .notfound_subtitle {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $font-weight_medium;
   text-align: center;
   text-wrap: balance;
 
