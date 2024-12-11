@@ -1,28 +1,29 @@
+@use "../utils/variables" as *;
+
 .tag_container {
-    display: flex;
+  display: flex;
 }
 
 .tag {
-    background-color: #FF6060;
-    color: white;
-    min-width: 84px;
-    padding: 1em;
-    height: 18px;
-    font-size: 10px;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-top: 10px;
-    text-wrap: nowrap;
+  background-color: $main-color;
+  color: white;
+  padding: 1em;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-wrap: nowrap;
 
-    @media (min-width: 769px) {
-        font-size: 14px;
-        min-width: 115px;
-        border-radius: 10px;
-        margin-top: 20px;
-        flex-direction: column;
-    }
+  @media (min-width: 769px) {
+    font-size: 14px;
+    min-width: 115px;
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+  }
 }

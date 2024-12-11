@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const HousingCards = () => {
   const [housingData, setHousingData] = useState([]);
@@ -7,11 +7,11 @@ const HousingCards = () => {
   useEffect(() => {
     const fetchHousingData = async () => {
       try {
-        const response = await fetch('/housing.json');
+        const response = await fetch("/housing.json");
         const data = await response.json();
-        setHousingData(data); 
+        setHousingData(data);
       } catch (error) {
-        console.error('Erreur de chargement des données:', error);
+        console.error("Erreur de chargement des données :", error);
       }
     };
 

@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 export default function Banner({ backgroundImage, text = "", className = "" }) {
-
   return (
     <div className={`banner ${className}`}>
       <div
@@ -18,5 +17,5 @@ export default function Banner({ backgroundImage, text = "", className = "" }) {
 Banner.propTypes = {
   text: PropTypes.string,
   backgroundImage: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
 };

@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import ArrowLeft from '../assets/images/arrow_left.png';
-import ArrowRight from '../assets/images/arrow_right.png';
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import ArrowLeft from "../assets/images/arrow_left.png";
+import ArrowRight from "../assets/images/arrow_right.png";
 
 const Carousel = () => {
   const { id } = useParams();
@@ -11,7 +11,7 @@ const Carousel = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/housing.json');
+        const response = await fetch("/housing.json");
         const data = await response.json();
 
         const selectedObject = data.find((obj) => obj.id === id);
@@ -19,10 +19,12 @@ const Carousel = () => {
         if (selectedObject && Array.isArray(selectedObject.pictures)) {
           setPictures(selectedObject.pictures);
         } else {
-          console.error('L\'objet ou la propriété "pictures" est manquante ou mal formée');
+          console.error(
+            'L\'objet ou la propriété "pictures" est manquante ou mal formée'
+          );
         }
       } catch (error) {
-        console.error('Erreur lors de la récupération des données:', error);
+        console.error("Erreur lors de la récupération des données :", error);
       }
     };
 
@@ -34,7 +36,9 @@ const Carousel = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length
+    );
   };
 
   return (
@@ -51,11 +55,15 @@ const Carousel = () => {
         </>
       )}
 
-      <div className="carousel_container">
-        <img
-          src={pictures[currentIndex]}
-          alt={`Slide ${currentIndex + 1}`}
-        />
+      <div
+        className="carousel_container"
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`,
+        }}
+      >
+        {pictures.map((picture, index) => (
+          <img key={index} src={picture} alt={`Slide ${index + 1}`} />
+        ))}
       </div>
 
       {pictures.length > 1 && (

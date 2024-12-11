@@ -1,13 +1,13 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 
-    @media (min-width: 1240px) {
-		font-size: 24px;
-        padding: 45px 100px;
-	}
+  @media (min-width: 1240px) {
+    font-size: 24px;
+    padding: 45px 100px;
+  }
 
   ul {
     list-style: none;
@@ -15,8 +15,8 @@ header {
     gap: 26px;
 
     @media (min-width: 769px) {
-		gap: 57px;
-	  }
+      gap: 57px;
+    }
   }
 
   a {
@@ -27,9 +27,9 @@ header {
     text-transform: uppercase;
 
     @media (min-width: 769px) {
-		font-size: 24px;
-    text-transform: capitalize;
-	  }
+      font-size: 24px;
+      text-transform: capitalize;
+    }
   }
 
   .active {
@@ -39,9 +39,9 @@ header {
 }
 
 .logo {
-    width: 145px;
+  width: 145px;
 
-    @media (min-width: 769px) {
-		width: 210px;
-	}
+  @media (min-width: 769px) {
+    width: 210px;
+  }
 }

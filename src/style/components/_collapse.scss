@@ -1,49 +1,70 @@
+@use "../utils/variables" as *;
+
 .collapse_container {
+  @media (min-width: 769px) and (max-width: 1239px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 49px;
+  }
 
-    @media (min-width: 770px) and (max-width: 1239px) {
-		display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 49px;
-	}
-
-    @media (min-width: 1240px) {
-		display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 76px;
-	}
+  @media (min-width: 1240px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 76px;
+  }
 }
 
 details {
-    overflow: hidden;
-    margin-block: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
 
-    > div {
-        font-size: 12px;
-        padding: 13px 20px 19px 20px;
-        background-color: #f6f6f6;
+  @media (min-width: 769px) {
+    margin-bottom: 30px;
+  }
 
-        @media (min-width: 769px) {
-            font-size: 18px;
-        }
+  > div {
+    font-size: 12px;
+    padding: 13px 20px 19px 20px;
+    background-color: #f6f6f6;
+
+    @media (min-width: 769px) and (max-width: 1239px) {
+      padding: 25px 28px 20px 20px;
+      font-size: 18px;
     }
 
-    li {
-        list-style-type: none;
+    @media (min-width: 1240px) {
+      font-size: 18px;
+      padding: 16px 20px 20px 20px;
     }
+  }
+
+  li {
+    list-style-type: none;
+  }
 }
 
 summary {
-    background-color: #FF6060;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+  background-color: $main-color;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 
-    @media (min-width: 769px) {
-		font-size: 24px;
-	}
+  @media (min-width: 769px) and (max-width: 1239px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1240px) {
+    font-size: 24px;
+  }
+}
+
+.collapse_about {
+  @media (min-width: 1240px) {
+    padding-inline: 108px;
+  }
 }

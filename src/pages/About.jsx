@@ -1,6 +1,6 @@
-import Banner from "../components/Banner"
-import Collapse from "../components/Collapse"
-import { useState, useEffect } from 'react';
+import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
+import { useState, useEffect } from "react";
 
 const About = () => {
   const [data, setData] = useState([]);
@@ -12,7 +12,7 @@ const About = () => {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch('../collapse.json');
+        const response = await fetch("../collapse.json");
         if (!response.ok) {
           throw new Error(`Erreur HTTP : ${response.status}`);
         }
@@ -29,17 +29,19 @@ const About = () => {
 
   return (
     <>
-    <Banner 
-          backgroundImage='./src/assets/images/about_banner.png'
-          className="banner_about"
+      <Banner
+        backgroundImage="./src/assets/images/about_banner.png"
+        className="banner_about"
       />
       {loading && <p>Chargement des données...</p>}
       {error && <p>Erreur : {error}</p>}
-      <Collapse
-            data={data}
-            titleKey="title"
-            descriptionKey="aboutDescription"
-          />
+      <div className="collapse_about">
+        <Collapse
+          data={data}
+          titleKey="title"
+          descriptionKey="aboutDescription"
+        />
+      </div>
     </>
   );
 };

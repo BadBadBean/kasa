@@ -1,15 +1,15 @@
-import Banner from "../components/Banner"
-import Card from "../components/Card"
+import Banner from "../components/Banner";
+import Card from "../components/Card";
 
 export default function Home() {
-    return (
+  return (
     <>
-      <Banner 
-        backgroundImage='./src/assets/images/home_banner.png'
+      <Banner
+        backgroundImage="./src/assets/images/home_banner.png"
         text="Chez vous, partout et ailleurs"
         className="banner_home"
       />
       <Card />
     </>
-  )
+  );
 }

@@ -1,19 +1,21 @@
-.housing_title {
-    color: #FF6060;
-    font-size: 18px;
-    font-weight: 500;
+@use "../utils/variables" as *;
 
-    @media (min-width: 769px) {
-		font-size: 36px;
-	}
+.housing_title {
+  color: $main-color;
+  font-size: 18px;
+  font-weight: 500;
+
+  @media (min-width: 769px) {
+    font-size: 36px;
+  }
 }
 
 .housing_location {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
 
-    @media (min-width: 769px) {
-		font-size: 18px;
-	}
+  @media (min-width: 769px) {
+    font-size: 18px;
+  }
 }

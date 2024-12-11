@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 const Host = () => {
   const { id } = useParams();
@@ -7,10 +7,10 @@ const Host = () => {
   const [rating, setRating] = useState(null);
 
   useEffect(() => {
-    fetch('/housing.json')
-      .then(response => response.json())
-      .then(data => {
-        const hostData = data.find(item => item.id === id);
+    fetch("/housing.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const hostData = data.find((item) => item.id === id);
         if (hostData) {
           setHost(hostData.host);
           setRating(hostData.rating);
@@ -39,9 +39,9 @@ const Host = () => {
 
   return (
     <div className="host-details">
-      <div className='host_info'>
-      <h2>{host.name}</h2>
-      <img src={host.picture} alt={host.name} className="host-picture" />
+      <div className="host_info">
+        <h2>{host.name}</h2>
+        <img src={host.picture} alt={host.name} className="host-picture" />
       </div>
       {rating && <div className="stars">{renderStars(parseInt(rating))}</div>}
     </div>
